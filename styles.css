@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/*--------------HEADER --------------*/
+/*--------------HEADER--------------*/
 header {
     height: 100px; 
     background-color: #413b3c;
@@ -52,35 +52,64 @@ header {
     color: #ffffff;
 }
 
-
+/*--------------SUBHEADER--------------*/
 .subheader {
     background-color: #737373;
-    height: 40px; 
+    height: 60px; 
     border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
-    padding-left: 0px; 
+    padding-left: 20px; /* Align with logo margin */
     box-sizing: border-box;
 }
 
 .nav-menu {
     display: flex;
-    align-items: center;
-    width: 100%; 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.nav-menu ul {
-    display: flex;
-    list-style: none;
+.nav-item {
+    position: relative;
+    margin-right: 20px;
 }
 
-.nav-menu li {
-    margin-right: 15px;
-}
-
-.nav-menu a {
+/*Categorias*/
+.nav-item a {
     text-decoration: none;
     color: #ffffff;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-item:hover .submenu {
+    display: block;
+}
+
+/* Menu desplegable*/
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    color: #000000;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.submenu li a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.submenu li a:hover {
+    background-color: #fcfcfc;
 }
 
 
@@ -119,3 +148,4 @@ header {
     }
 }
 
+/*--------------FOOTER--------------*/
