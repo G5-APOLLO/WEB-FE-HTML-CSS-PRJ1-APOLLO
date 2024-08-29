@@ -7,17 +7,17 @@ body {
 /*--------------HEADER--------------*/
 header {
     height: 100px; 
-    background-color: #211a1a;
+    background: radial-gradient(circle, #171010, #666063 97%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 2.5%;
 }
-
 
 .search-container {
     display: flex;
     align-items: center;
+    padding-left: 10%;
 }
 
 .search-container input {
@@ -30,7 +30,7 @@ header {
 }
 
 .search-button {
-    padding: 11px 10px;
+    padding: 10px 10px;
     border: 1px solid #ccc;
     border-left: none;
     cursor: pointer;
@@ -53,7 +53,7 @@ header {
 
 /*--------------SUBHEADER--------------*/
 .subheader {
-    background-color: #737373;
+    background-color: #686565;
     height: 60px; 
     border-bottom: 1px solid #ddd;
     display: flex;
@@ -124,7 +124,7 @@ header {
 
 footer {
     height: 100px; 
-    background-color: #211a1a;
+    background: radial-gradient(circle, #171010, #666063 99%);
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -150,7 +150,7 @@ footer {
 
 
 .footer-bottom {
-    background-color: #1b1b20;
+
     padding: 10px 0;
 }
 
@@ -195,7 +195,7 @@ footer {
     header img.logo {
         width: 50px;
         height: 50px;
-        padding-left: 20px;
+        padding-left: 30%;
     }
 
     header a {
@@ -203,8 +203,8 @@ footer {
     }
 
     .search-container {
-        width: 30%;
-        margin-left: 60px;
+        width: 40%;
+        margin-left: 40px;
     }
 
     .search-container input {
