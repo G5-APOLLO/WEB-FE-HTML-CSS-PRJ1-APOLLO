@@ -347,3 +347,35 @@ footer {
         font-size: 0.9em;
     }
 }
+
+/*---------------- MAIN  PAGE RESPONSIVE-------------*/
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .featured-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-box img {
+        height: 150px;
+    }
+
+    .product-box h3 {
+        font-size: 1em;
+    }
+
+    .product-box .original-price {
+        font-size: 0.9em;
+    }
+
+    .product-box .discount-price {
+        font-size: 1.2em;
+    }
+
+    .product-box button {
+        font-size: 0.9em;
+    }
+
+   
+    
+}
