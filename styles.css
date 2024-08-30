@@ -194,7 +194,8 @@ footer {
 
 .promo-image img {
     width: 100%;
-    height: 5%; /* Ajuste de la altura a un valor más pequeño */
+    height: 5%;
+    /* Ajuste de la altura a un valor más pequeño */
     border-radius: 8px;
 }
 
@@ -257,7 +258,7 @@ footer {
 
 .product-box button:hover {
     background-color: #383637;
-    
+
 }
 
 .banner {
@@ -367,6 +368,11 @@ footer {
         font-size: 1em;
     }
 
+    .product-box img {
+        width: 100%;
+        height: auto;
+    }
+
     .product-box .original-price {
         font-size: 0.9em;
     }
@@ -379,6 +385,6 @@ footer {
         font-size: 0.9em;
     }
 
-   
-    
+
+
 }
