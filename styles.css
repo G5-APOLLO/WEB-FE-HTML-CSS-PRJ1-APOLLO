@@ -439,6 +439,13 @@ main {
 }
 
 
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 /*--------------PLP--------------*/
 
 /* Contenedor de productos y filtros */
@@ -459,7 +466,6 @@ main {
     width: 100%;
     max-width: 200px;
     margin-right: 20px;
-    
 }
 
 .filter-category {
@@ -483,18 +489,18 @@ main {
 
 .product-item-1 {
     display: flex;
-    flex-direction: row-reverse; /* Change to row-reverse */
+    flex-direction: row-reverse;
     border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 20px;
     align-items: center;
+    flex-wrap: wrap; /* Para asegurar que los elementos se alineen bien en móviles */
 }
-
 
 .product-item-1 img {
     width: 35%;
     height: auto;
-    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+    margin-right: 20px;
 }
 
 .info-producto-1 {
@@ -504,14 +510,22 @@ main {
 .product-link {
     text-decoration: none;
     color: inherit;
-    display:     flex;
+    display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
 }
 
+.product-link img {
+    transition: transform 0.3s ease;
+}
+
+.product-link:hover img {
+    transform: scale(1.1);
+}
+
 .add-to-cart {
-    background-color:#36382E;
+    background-color: #36382E;
     color: white;
     width: 100%;
     padding: 15px;
@@ -520,7 +534,6 @@ main {
     font-size: 18px;
     cursor: pointer;
     margin-top: 20px;
-
 }
 
 #stars-for-products {
