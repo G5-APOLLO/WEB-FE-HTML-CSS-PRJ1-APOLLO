@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header y Footer</title>
+    <title> CLICKY </title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <div> 
-            <a href="./index.html" >
+        <div>
+            <a href="./index.html">
                 <img class="logo" src="./img/Logo.png" alt="Logo compañia" width="70" height="70">
             </a>
-        
+
         </div>
         <div class="search-container">
             <input type="text" placeholder="Buscar...">
@@ -20,10 +22,10 @@
                 <img src="./img/search-alt-2-svgrepo-com.svg" alt="Buscar" width="25" height="25">
             </button>
         </div>
-       
+
         <nav class="account-cart">
-            <a href="#" >
-                <img src="./img/account-svgrepo-com.svg" alt="Cuenta" width="35" height="35">
+            <a href="#">
+                <img src="./img/account-svgrepo-com.svg" alt="Cuenta" width="40" height="40">
                 Mi Cuenta
             </a>
             <a href="cart.html">
@@ -71,11 +73,127 @@
             </li>
         </ul>
     </nav>
-    
-    <main>
-        <!-- Contenido central que crecerá automáticamente -->
+
+    <main class="content">
+        <!-- Sección de Imágenes Promocionales -->
+        <section class="promo-images">
+            <div class="promo-image">
+                <img src="img/promo1.png" alt="Producto con descuento 1">
+            </div>
+            <div class="promo-image">
+                <img src="img/promo2.png" alt="Producto con descuento 2">
+            </div>
+        </section>
+
+        <!-- Sección de Productos Destacados -->
+        <section class="featured-products">
+            <div class="product-box">
+                <img src="img/iPhone-15.png" alt="iPhone 15 128 GB 5G Rosa">
+                <h3>iPhone 15 128 GB 5G Rosa</h3>
+                <p class="original-price">$4.599.010</p>
+                <p class="discount-price">$4.139.010 <span>-10%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <!-- Celulares -->
+            <div class="product-box">
+                <img src="img/samsung-galaxy.png" alt="Celular SAMSUNG Galaxy Z Flip6 256GB 5G Plateado + Cover">
+                <h3>Celular SAMSUNG Galaxy Z Flip6 256GB 5G Plateado + Cover</h3>
+                <p class="original-price">$5.999.990</p>
+                <p class="discount-price">$4.799.990 <span>-20%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product-box">
+                <img src="img/Tablet-SAMSUNG.png" alt="Tablet SAMSUNG 11 Pulgadas A9 Plus 128GB WiFi Color Gris">
+                <h3>Tablet SAMSUNG 11 Pulgadas A9 Plus 128GB WiFi Color Gris</h3>
+                <p class="original-price">$1.299.900</p>
+                <p class="discount-price">$779.940 <span>-40%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <!-- Tecnologia -->
+            <div class="product-box">
+                <img src="img/Computador-LENOVO.png"
+                    alt="Computador Portátil LENOVO 15,6 Pulgadas IdeaPad Slim 3 Táctil">
+                <h3>Computador Portátil LENOVO 15,6 Pulgadas IdeaPad Slim 3 Táctil</h3>
+                <p class="original-price">$3.599.0000</p>
+                <p class="discount-price">$2.159.400 <span>-40%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product-box">
+                <img src="img/Cámara-GOPRO.png" alt="Cámara de Acción GOPRO Hero 12 Black">
+                <h3>Cámara de Acción GOPRO Hero 12 Black</h3>
+                <p class="original-price">$1.989.900</p>
+                <p class="discount-price">$1.392.930<span>-30%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product-box">
+                <img src="img/TV-SAMSUNG.png" alt="TV SAMSUNG 60 Pulgadas">
+                <h3>TV SAMSUNG 60 Pulgadas</h3>
+                <p class="original-price">$3.599.900</p>
+                <p class="discount-price">$2.159.940 <span>-40%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <!-- Hogar -->
+            <div class="product-box">
+                <img src="img/Juego-de-Sala.png" alt="Juego de Sala Exterior MQ Plástico Ratán Capri Comfort Mocca">
+                <h3>Juego de Sala Exterior MQ Plástico Ratán Capri Comfort Mocca</h3>
+                <p class="original-price">$699.950 </p>
+                <p class="discount-price">$629.955 <span>-10%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product-box">
+                <img src="img/Combo-Comedor.png" alt="Combo Comedor Redondo DKO Amaretto  4 Sillas Negras">
+                <h3>Combo Comedor Redondo DKO Amaretto 4 Sillas Negras</h3>
+                <p class="original-price">$1.159.900</p>
+                <p class="discount-price">$899.900<span>-22%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product-box">
+                <img src="img/desktop.png" alt="Escritorio INVAL París Arena">
+                <h3>Escritorio INVAL París Arena</h3>
+                <p class="original-price">$439.900</p>
+                <p class="discount-price">$369.900<span>-16%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <!-- Electrodomesticos -->
+            <div class="product-box">
+                <img src="img/Nevera-LG.png"
+                    alt="Nevera LG No Frost Congelador Inferior 305 Litros Brutos GB33WPT Negro">
+                <h3>Nevera LG No Frost Congelador Inferior 305 Litros Brutos GB33WPT Negro</h3>
+                <p class="original-price">$4.999.900</p>
+                <p class="discount-price">$2.799.900 <span>-20%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product-box">
+                <img src="img/Lavadora-SAMSUNG.png" alt="Lavadora SAMSUNG Carga Superior 19 kilos WA19CG6441BD Gris">
+                <h3>Lavadora SAMSUNG Carga Superior 19 kilos WA19CG6441BD Gris</h3>
+                <p class="original-price">$2.019.900</p>
+                <p class="discount-price">$1.799.900 <span>-11%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product-box">
+                <img src="img/aire.png"
+                    alt="Aire Acondicionado WHIRLPOOL 12000BTU Tipo split Inverter 220V LWA5060Q Blanco">
+                <h3>Aire Acondicionado WHIRLPOOL 12000BTU Tipo split Inverter 220V LWA5060Q Blanco</h3>
+                <p class="original-price">$2.849.900</p>
+                <p class="discount-price">$1.599.900 <span>-44%</span></p>
+                <button>Añadir al carrito</button>
+            </div>
+
+
+        </section>
+
+        <!-- Sección de Banner Publicitario -->
+        <section class="banner">
+            <img src="img/banner.png" alt="Banner Publicitario">
+        </section>
     </main>
+
     <footer>
+
         <div class="footer-top">
             <div class="footer-info">
                 <p>© 2022 CLICKY S.A.S.</p>
@@ -87,8 +205,8 @@
                 <a href="#"><img src="./img/instagram-svgrepo-com.svg" alt="Instagram" width="40" height="40"></a>
             </div>
             <div class="footer-payment">
+                <img src="./img/pse.png" alt="Pse" width="60" height="40">
                 <img src="./img/visa-svgrepo-com.svg" alt="Visa" width="40" height="40">
-                <img src="./img/pse.png" alt="Pse" width="40" height="40">
                 <img src="./img/paypal-svgrepo-com.svg" alt="PayPal" width="40" height="40">
             </div>
         </div>
@@ -102,6 +220,7 @@
             </ul>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
