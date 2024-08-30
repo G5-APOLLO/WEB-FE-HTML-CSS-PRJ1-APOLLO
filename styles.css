@@ -189,6 +189,7 @@ footer {
     flex-direction: column;
     gap: 20px;
     margin-bottom: 40px;
+
 }
 
 .promo-image img {
@@ -217,7 +218,8 @@ footer {
 }
 
 .product-box img {
-    width: 100%;
+    width: 50%;
+    height: 50%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -244,7 +246,7 @@ footer {
 }
 
 .product-box button {
-    background-color: #674188;
+    background-color: #666063;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -254,7 +256,8 @@ footer {
 }
 
 .product-box button:hover {
-    background-color: #C8A1E0;
+    background-color: #383637;
+    
 }
 
 .banner {
