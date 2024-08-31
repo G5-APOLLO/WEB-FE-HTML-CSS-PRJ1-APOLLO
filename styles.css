@@ -563,7 +563,7 @@ main {
         font-size: 0.9em;
     }
 }
-
+/*---------------- PDP STYLES RESPONSIVE-------------*/
 /* styles pdp */
 /* Migaja de pan (breadcrumb) */
 .breadcrumb {
@@ -768,25 +768,32 @@ body {
     font-weight: bold;
 }
 
-
-
-
-
-
+/*---------------- PDP STYLES RESPONSIVE-------------*/
 
 /* Responsiveness */
 @media (max-width: 768px) {
 
-    
+     /* Nombre del producto */
+     .product-name {
+        text-align: center;
+        margin: 40px 0;
+        font-size: 3.5vw; /* Ajusta el tamaño del texto según el ancho de la pantalla */
+        max-width: 100%; /* Asegura que no se desborde */
+        word-wrap: break-word; /* Permite que las palabras se dividan si es necesario */
+        hyphens: auto; /* Agrega guiones para dividir palabras largas */
+    }
     
     .product-container {
-        flex-direction:column;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Centra los elementos verticalmente */
+       
     }
-
+    
     .product-summary {
-        margin-left: 20px;
-        text-align: left;
+        margin: 20px 0 0 0; /* Ajusta el margen para mantener el texto alineado correctamente */
+        text-align: left; /* Centra el texto debajo de la imagen */
     }
     
     .specifications {
