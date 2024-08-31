@@ -706,6 +706,35 @@ body {
     height: auto; 
 }
 
+/* Estilos de paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.pagination a {
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.pagination a.active {
+    background-color: #36382E;
+    color: white;
+    border: 1px solid #36382E;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
 
 @media (max-width: 768px) {
     .product-link{
