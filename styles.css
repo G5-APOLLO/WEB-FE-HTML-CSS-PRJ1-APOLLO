@@ -694,6 +694,19 @@ body {
     height: auto;
 }
 
+.ad-banner {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.ad-banner img {
+    width: 159%;
+    height: auto; 
+}
+
+
 @media (max-width: 768px) {
     .product-link{
         flex-direction: column;
@@ -704,5 +717,8 @@ body {
     }
     #stars-for-products {
         width: 7%;
+    }
+    .ad-banner img {
+        max-width: 110%; 
     }
 }
