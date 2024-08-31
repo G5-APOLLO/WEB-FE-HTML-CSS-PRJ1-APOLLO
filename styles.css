@@ -437,3 +437,129 @@ main {
         margin-top: 20px;
     }
 }
+
+/*-------------------MAIN PAGE STYLES----------------------------*/
+
+.content {
+    padding: 20px;
+}
+
+.promo-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+
+}
+
+.promo-image img {
+    width: 100%;
+    height: 5%;
+    /* Ajuste de la altura a un valor más pequeño */
+    border-radius: 8px;
+}
+
+.featured-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.product-box {
+    background-color: #f5f5f5;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-box:hover {
+    transform: scale(1.05);
+}
+
+.product-box img {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-box h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-box .original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.product-box .discount-price {
+    color: #e60000;
+    font-weight: bold;
+}
+
+.product-box .discount-price span {
+    color: #333;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.product-box button {
+    background-color: #666063;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-box button:hover {
+    background-color: #383637;
+
+}
+
+.banner {
+    margin-top: 40px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*---------------- MAIN  PAGE RESPONSIVE-------------*/
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .featured-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-box img {
+        height: 150px;
+    }
+
+    .product-box h3 {
+        font-size: 1em;
+    }
+
+    .product-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-box .original-price {
+        font-size: 0.9em;
+    }
+
+    .product-box .discount-price {
+        font-size: 1.2em;
+    }
+
+    .product-box button {
+        font-size: 0.9em;
+    }
+}
