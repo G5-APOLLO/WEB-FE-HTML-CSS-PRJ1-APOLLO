@@ -545,7 +545,13 @@ main {
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
-   
+    .promo-img-1 {
+        content: url('img/promo1-res.png');
+
+    }
+    .promo-img-2 {
+        content: url('img/promo2-res.png');
+    }
     .featured-products {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -573,6 +579,9 @@ main {
 
     .product-box button {
         font-size: 0.9em;
+    }
+    .banner{
+        content: url('img/banner-res.png');
     }
 }
 /*---------------- PDP STYLES RESPONSIVE-------------*/
