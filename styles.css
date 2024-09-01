@@ -896,7 +896,7 @@ main {
 
 /*---------------------------PLP------------------------------*/
 
-/* Contenedor de productos y filtros */
+
 .product-list-container {
     display: flex;
     flex-wrap: wrap;
@@ -909,7 +909,7 @@ main {
     margin: 0 auto;
 }
 
-/* Filtros */
+
 .filter-box {
     width: 100%;
     max-width: 200px;
@@ -922,7 +922,6 @@ main {
     margin-bottom: 10px;
 }
 
-/* Listado de productos */
 .product-list {
     flex: 1;
 }
@@ -942,7 +941,7 @@ main {
     padding: 10px;
     margin-bottom: 20px;
     align-items: center;
-    flex-wrap: wrap; /* Para asegurar que los elementos se alineen bien en móviles */
+    flex-wrap: wrap;
 }
 
 .product-item-1 img {
@@ -988,7 +987,6 @@ main {
     width: 4%;
 }
 
-/* Otros estilos */
 .product-item h4 {
     margin: 0 0 10px 0;
 }
@@ -1029,7 +1027,7 @@ main {
     height: auto; 
 }
 
-/* Estilos de paginación */
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -1057,20 +1055,35 @@ main {
     background-color: #ddd;
 }
 
-
-
+/* mobile plp */
 @media (max-width: 768px) {
-    .product-link{
+    .results-info {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .results-info select {
+        margin-top: 10px; 
+        width: 100%; 
+    }
+
+    .product-link {
         flex-direction: column;
     }
+
     .product-link img {
         width: 100%;
         height: auto;
     }
+
     #stars-for-products {
         width: 7%;
     }
+
     .ad-banner img {
-        max-width: 110%; 
+        max-width: 111%;
+        height: auto;
     }
 }
+
