@@ -896,7 +896,7 @@ main {
 
 /*---------------------------PLP------------------------------*/
 
-/* Estilos generales */
+
 .product-list-container {
     display: flex;
     flex-wrap: wrap;
@@ -987,7 +987,6 @@ main {
     width: 4%;
 }
 
-/* Otros estilos */
 .product-item h4 {
     margin: 0 0 10px 0;
 }
@@ -1056,20 +1055,35 @@ main {
     background-color: #ddd;
 }
 
-
-
+/* mobile plp */
 @media (max-width: 768px) {
-    .product-link{
+    .results-info {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .results-info select {
+        margin-top: 10px; 
+        width: 100%; 
+    }
+
+    .product-link {
         flex-direction: column;
     }
+
     .product-link img {
         width: 100%;
         height: auto;
     }
+
     #stars-for-products {
         width: 7%;
     }
+
     .ad-banner img {
-        max-width: 111%; 
+        max-width: 111%;
+        height: auto;
     }
 }
+
