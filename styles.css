@@ -14,7 +14,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1.5%;
+}
+
+header img.logo {
+    padding-left: 20%;
 }
 
 .search-container {
@@ -27,8 +30,8 @@ header {
     padding: 15px 40px;
     font-size: 1em;
     border: 1px solid #ccc;
-    border-radius: 15px 0 0 15px;
-    background-color: #413b3c;
+    border-radius: 15px 0 0 15px ;
+    background-color: #413b3c;   
     color: #ffffff;
 }
 
@@ -36,7 +39,6 @@ header {
 .search-container input:focus {
     background-color: #645b5d;
     transform: scale(1.01);
-
 }
 
 .search-button {
@@ -51,6 +53,7 @@ header {
 .account-cart {
     display: flex;
     align-items: center;
+    padding-right: 2%;
 }
 
 .account-cart a {
@@ -63,13 +66,12 @@ header {
 
 /*--------------SUBHEADER--------------*/
 .subheader {
-    background-color: #686565;
-    height: 60px;
+    background-color: #737373;
+    height: 60px; 
     border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
-    padding-left: 20px;
-    /* Align with logo margin */
+    padding-left: 20px; /* Align with logo margin */
     box-sizing: border-box;
 }
 
@@ -108,7 +110,7 @@ header {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
 }
 
 .submenu li a {
@@ -119,8 +121,8 @@ header {
 }
 
 .submenu li a.active {
-    text-decoration: underline;
-    color: #474747;
+   text-decoration: underline;
+   color: #474747;
 }
 
 .submenu li a:hover {
@@ -131,10 +133,8 @@ header {
 
 
 /*--------------FOOTER--------------*/
-
-
 footer {
-    height: 100px;
+    height: 100px; 
     background: radial-gradient(circle, #171010, #666063 99%);
     color: #ffffff;
     padding: 20px;
@@ -154,12 +154,9 @@ footer {
     margin: 0;
 }
 
-.footer-social a,
-.footer-payment img {
+.footer-social a, .footer-payment img {
     margin: 0 10px;
 }
-
-
 
 .footer-bottom {
 
@@ -183,8 +180,7 @@ footer {
 }
 
 .site-map a.disabled {
-    color: #777777;
-    /* Gray color for disabled links */
+    color: #777777; /* Gray color for disabled links */
     pointer-events: none;
 }
 
@@ -192,11 +188,11 @@ footer {
 
 
 
-/*--Responsive Small Devices phones 48px--*/
-@media (max-width: 480px) {
+/*--Responsive header and footer--*/
+@media (max-width: 768px) {
     header {
         height: 70px;
-        padding: 5px;
+        width: auto
     }
 
     header img {
@@ -205,9 +201,9 @@ footer {
     }
 
     header img.logo {
-        width: 50px;
-        height: 50px;
-        padding-left: 30%;
+        width: 70px;
+        height: 35px;
+        padding-left: 25%;
     }
 
     header a {
@@ -216,11 +212,11 @@ footer {
 
     .search-container {
         width: 50%;
-        margin-left: 10px;
+        margin-right: 0%;;
     }
 
     .search-container input {
-        width: calc(100% - 50px);
+        width: 20%;
         padding: 10px 20px;
         font-size: 0.9em;
     }
@@ -231,11 +227,12 @@ footer {
 
     .account-cart {
         margin-top: 10px;
-        justify-content: right;
+        margin-right: 4%;
     }
 
     .subheader {
-        height: 40px;
+        height: 40px; 
+        width: 100%;
     }
 
     .nav-menu {
@@ -243,12 +240,12 @@ footer {
     }
 
     .nav-item a {
-        padding: 8px 3px;
+        padding: 8px 0px;
+        
     }
 
     .submenu li a {
-        padding: 4px 5px;
-        font-size: 0.9em;
+        padding: 8px 5px;
     }
 
     footer {
@@ -260,7 +257,6 @@ footer {
         width: 25px;
         height: 25px;
     }
-
     .footer-info p {
         font-size: 0.8em;
     }
@@ -273,7 +269,6 @@ footer {
         margin: 0 3px;
     }
 }
-
 
 /*--Shopping cart styles.css--*/
 
