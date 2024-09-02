@@ -1009,7 +1009,7 @@ main {
 }
 
 .ad-banner img {
-    width: 158.1%;
+    width: 158%;
     height: auto; 
 }
 
@@ -1072,4 +1072,19 @@ main {
         height: auto;
     }
 }
+
+/* problema del banner para las otras resoluciones de PC*/
+@media (max-width: 1600px){
+    .ad-banner img {
+        max-width: 131%;
+        height: auto;
+    }
+} 
+
+@media (max-width: 1366px){
+    .ad-banner img {
+        max-width: 112%;
+        height: auto;
+    }
+} 
 
