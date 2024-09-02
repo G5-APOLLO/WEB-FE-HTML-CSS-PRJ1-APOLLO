@@ -289,7 +289,10 @@ main {
 
 .breadcrumb {
     margin-bottom: 20px;
-    font-size: 14px;
+    width: 97.5%;
+    padding: 15px;
+    background-color: #f1f1f1;
+    font-size: 0.9em;
 }
 
 .breadcrumb a {
@@ -585,24 +588,12 @@ main {
     }
 }
 
-/* --- PDP styles.css --- */
-
-/*---------------- PDP STYLES -------------*/
+/*---------------------------------- PAGINA PDP  ---------------------------*/
 /* Migaja de pan (breadcrumb) */
-.breadcrumb {
-    padding: 15px;
-    background-color: #f1f1f1;
-    margin: 0;
-    font-size: 0.9em;
-}
-
-.breadcrumb a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.breadcrumb a:hover {
-    text-decoration: underline;
+.MainPDP {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Nombre del producto */
@@ -626,27 +617,27 @@ main {
 .gallery-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea todo a la izquierda */
-    max-width: 600px; /* Tamaño máximo del contenedor */
-    margin: 20px; /* Espacio alrededor del contenedor */
+    align-items: flex-start; 
+    max-width: 600px; 
+    margin: 20px; 
    
 }
 .gallery-container input[type="radio"] {
     position: absolute;
-    left: -9999px; /* Mueve los inputs fuera de la pantalla */
+    left: -9999px; 
 }
 
 /* Imagen principal */
 .main-image {
     position: relative;
-    width: 100%; /* La imagen ocupa todo el ancho disponible del contenedor */
+    width: 100%; 
 }
 
 .main-img {
     width: 100%;
     height: auto;
-    border: 2px solid #000; /* Borde negro */
-    border-radius: 10px; /* Esquinas redondeadas */
+    border: 2px solid #000;
+    border-radius: 10px;
     display: none;
 }
 
@@ -660,7 +651,7 @@ main {
 .thumbnails {
     display: flex;
     gap: 10px;
-    margin-top: 10px; /* Espacio entre la imagen principal y las miniaturas */
+    margin-top: 10px; 
     overflow-x: auto;
 }
 
@@ -683,7 +674,7 @@ main {
     text-align: left;
     max-width: 600px;
    
-    line-height: 1.6; /* Opcional: aumenta el espacio entre líneas para mejorar la legibilidad */ 
+    line-height: 1.6; 
     max-width: 400px;
     background-color: #f5f5f5;
     padding: 20px;
@@ -785,7 +776,7 @@ main {
     font-weight: bold;
 }
 
-/*---------------- PDP STYLES RESPONSIVE-------------*/
+/*---------------------------- PAGINA PDP RESPONSIVE -------------------------------*/
 
 /* Responsiveness */
 @media (max-width: 768px) {
@@ -794,23 +785,23 @@ main {
      .product-name {
         text-align: center;
         margin: 40px 0;
-        font-size: 3.5vw; /* Ajusta el tamaño del texto según el ancho de la pantalla */
-        max-width: 100%; /* Asegura que no se desborde */
-        word-wrap: break-word; /* Permite que las palabras se dividan si es necesario */
-        hyphens: auto; /* Agrega guiones para dividir palabras largas */
+        font-size: 3.5vw; 
+        max-width: 100%; 
+        word-wrap: break-word; 
+        hyphens: auto; 
     }
     
     .product-container {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centra los elementos horizontalmente */
-        justify-content: center; /* Centra los elementos verticalmente */
+        align-items: center; 
+        justify-content: center; 
        
     }
     
     .product-summary {
-        margin: 20px 0 0 0; /* Ajusta el margen para mantener el texto alineado correctamente */
-        text-align: left; /* Centra el texto debajo de la imagen */
+        margin: 20px 0 0 0; 
+        text-align: left; 
     }
     
     .specifications {
